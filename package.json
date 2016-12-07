@@ -1,0 +1,46 @@
+{
+  "name": "hlRightPanel",
+  "tittle": "HL Right Panel With JQuery",
+  "description": "The hlRightPanel is a jquery panel plugin on the right of screen",
+  "version": "0.0.1",
+  "author": {
+    "name": "Hosea Lee",
+    "url": "https://github.com/leehosea"
+  },
+  "maintainers": [
+    {
+      "name": "Hosea Lee",
+      "email": "hosealee0208@gmail.com",
+      "url": "https://github.com/leehosea"
+    }
+  ],
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leehosea/hlRightPanel"
+  },
+  "scripts": {
+    "preinstall": "",
+    "postinstall": "gulp default",
+    "start": "",
+    "test": ""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap3": "^3.3.5",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "jquery": "^3.1.1",
+    "minimist": "^1.2.0"
+  },
+  "keywords": [
+    "jquery",
+    "toolbar",
+    "panel"
+  ]
+}

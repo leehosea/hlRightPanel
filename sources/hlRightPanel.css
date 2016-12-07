@@ -1,0 +1,229 @@
+/**
+ * Created by HoseaLee on 16/12/6.
+ */
+.hl-rightPanel-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9990;
+    width: 0;
+    height: 100%;
+}
+
+.hl-rightPanel-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9990;
+    width: 0;
+    height: 100%;
+}
+
+.hl-rightPanel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-right: 6px solid #7a6e6e;
+    -webkit-transition: right .3s ease-in-out 0s;
+    -moz-transition: right .3s ease-in-out 0s;
+    transition: right .3s ease-in-out 0s;
+
+}
+
+.hl-rightPanel-panels {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    width: 270px;
+    height: 100%;
+    z-index: 2;
+    background: #eceaea;
+}
+
+.hl-rightPanel-panel {
+    width: 270px;
+    height: 100%;
+    position: absolute;
+    background: #eceaea;
+}
+
+.hl-rightPanel-tabs {
+    position: absolute;
+    top: 50%;
+    left: -29px;
+    width: 35px;
+    margin-top: -61px
+}
+
+.hl-rightPanel-tab {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    background-color: #7a6e6e;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px
+}
+
+.hl-rightPanel-tab .tab-text {
+    width: 62px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+    left: 35px;
+    top: 0;
+    background-color: #7a6e6e;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    -webkit-transition: left .3s ease-in-out .1s;
+    -moz-transition: left .3s ease-in-out .1s;
+    transition: left .3s ease-in-out .1s;
+}
+
+.hl-rightPanel-tab-hover {
+    background: #c81623;
+}
+
+.hl-rightPanel-tab-hover .tab-text {
+    background: #c81623;
+    left: -60px;
+}
+
+.hl-rightPanel-tab-hover .tab-icon {
+    background-color: #c81623;
+}
+
+.hl-rightPanel-tab-selected, .hl-rightPanel-tab-selected .tab-icon {
+    background-color: #c81623;
+}
+
+.hl-rightPanel-panel-header {
+    position: relative;
+    width: 270px;
+    height: 40px;
+    line-height: 40px;
+    background: #eceaea;
+}
+
+.hl-rightPanel-panel-main {
+    position: relative;
+}
+
+div.hl-rightPanel-open .hl-rightPanel {
+    right: 270px;
+}
+
+/*panel 进入 跳出 动画*/
+@-webkit-keyframes rightPanel-scaleIn {
+    from {
+        opacity: .7;
+        -webkit-transform: translateX(270px);
+        -moz-transform: translateX(270px);
+        transform: translateX(270px)
+    }
+    to {
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+}
+
+@-ms-keyframes rightPanel-scaleIn {
+    from {
+        opacity: .7;
+        -webkit-transform: translateX(270px);
+        -moz-transform: translateX(270px);
+        transform: translateX(270px)
+    }
+    to {
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+}
+
+@-moz-keyframes rightPanel-scaleIn {
+    from {
+        opacity: .7;
+        -webkit-transform: translateX(270px);
+        -moz-transform: translateX(270px);
+        transform: translateX(270px)
+    }
+    to {
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+}
+
+@keyframes rightPanel-scaleIn {
+    from {
+        opacity: .7;
+        -webkit-transform: translateX(270px);
+        -moz-transform: translateX(270px);
+        transform: translateX(270px)
+    }
+    to {
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+}
+
+@-webkit-keyframes rightPanel-scaleOut {
+    to {
+        opacity: .5;
+        -webkit-transform: scale(0.7) translateX(270px);
+        -moz-transform: scale(0.7) translateX(270px);
+        transform: scale(0.7) translateX(270px)
+    }
+}
+
+@-ms-keyframes rightPanel-scaleOut {
+    to {
+        opacity: .5;
+        -webkit-transform: scale(0.7) translateX(270px);
+        -moz-transform: scale(0.7) translateX(270px);
+        transform: scale(0.7) translateX(270px)
+    }
+}
+
+@-moz-keyframes rightPanel-scaleOut {
+    to {
+        opacity: .5;
+        -webkit-transform: scale(0.7) translateX(270px);
+        -moz-transform: scale(0.7) translateX(270px);
+        transform: scale(0.7) translateX(270px)
+    }
+}
+
+@keyframes rightPanel-scaleOut {
+    to {
+        opacity: .5;
+        -webkit-transform: scale(0.7) translateX(270px);
+        -moz-transform: scale(0.7) translateX(270px);
+        transform: scale(0.7) translateX(270px)
+    }
+}
+
+.rightPanel-animate-in {
+    -webkit-animation: rightPanel-scaleIn .35s ease-in-out;
+    -moz-animation: rightPanel-scaleIn .35s ease-in-out;
+    animation: rightPanel-scaleIn .35s ease-in-out
+}
+
+.rightPanel-animate-out {
+    -webkit-animation: rightPanel-scaleOut .35s ease-in;
+    -moz-animation: rightPanel-scaleOut .35s ease-in;
+    animation: rightPanel-scaleOut .35s ease-in
+}
