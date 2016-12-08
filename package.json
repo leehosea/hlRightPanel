@@ -21,7 +21,7 @@
   },
   "scripts": {
     "preinstall": "",
-    "postinstall": "gulp default",
+    "postinstall": "gulp move",
     "start": "",
     "test": ""
   },

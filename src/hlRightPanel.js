@@ -17,7 +17,7 @@
         hlRightPanel: function (_data) {
             //模版
             var uli_global_rightPanel = $('' +
-                '<div id="uli-global-rightPanel">' +
+                '<div id="hl-global-rightPanel">' +
                 '   <div class="hl-rightPanel-wrap">' +
                 '       <div class="hl-rightPanel">' +
                 '           <div class="hl-rightPanel-panels"> </div>' +
@@ -52,8 +52,8 @@
                 var tab = $(uli_rightPanel_tab).attr("data-name", v.name).attr("data-type", v.type);
                 var panel = null;
                 if (v.type == "bar") {
-                    $(tab).append('<i class="tab-icon"></i><em class="tab-text"></em>');
-                    $("i.tab-icon", tab).addClass(v.labelIcon);
+                    $(tab).append('<i class="hl-tab-icon"></i><em class="tab-text"></em>');
+                    $("i.hl-tab-icon", tab).addClass(v.labelIcon);
                     $("em.tab-text", tab).html(v.label);
                     panel = $(uli_rightPanel_panel).attr("data-name", v.name).html(v.content);
                     panel.append(uli_rightPanel_panel_main);
@@ -119,7 +119,7 @@
                         }
                     }
                 } else if (v.type == "link") {
-                    var el = $('<a><i class="tab-icon"></i><em class="tab-text"></em></a>');
+                    var el = $('<a><i class="hl-tab-icon"></i><em class="tab-text"></em></a>');
                     tab.append(el);
                     if (v.target) {
                         $("a", tab).attr("target", v.target);
@@ -129,7 +129,7 @@
                     } else {
                         $("a", tab).attr("href", "#")
                     }
-                    $("i.tab-icon", tab).addClass(v.labelIcon);
+                    $("i.hl-tab-icon", tab).addClass(v.labelIcon);
                     $("em.tab-text", tab).html(v.label);
                 }
                 processTabPanel(tab, panel);

@@ -69,6 +69,16 @@
     border-radius: 3px 0 0 3px
 }
 
+.hl-rightPanel-tab .hl-tab-icon{
+    width: 34px;
+    height: 35px;
+    margin-left: 1px;
+    position: relative;
+    z-index: 2;
+    background-color: #7a6e6e;
+    display: inline-block;
+}
+
 .hl-rightPanel-tab .tab-text {
     width: 62px;
     height: 35px;

@@ -39,3 +39,7 @@ jspm_packages
 # text-editor
 .idea
 .idea/*
+
+#other plugins
+.plugins
+.plugins/*

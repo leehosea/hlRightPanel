@@ -27,22 +27,22 @@ gulp.task("move", ["move.jquery", "move.bootstrap3", "move.fontawesome"]);
 
 gulp.task("move.jquery", function () {
     gulp.src("node_modules/jquery/dist/jquery.min.js")
-        .pipe(gulp.dest('sources/jquery/'));
+        .pipe(gulp.dest('plugins/jquery/'));
 });
 
 gulp.task("move.bootstrap3", function () {
     gulp.src("node_modules/bootstrap3/dist/**/*")
-        .pipe(gulp.dest("sources/bootstrap3/"));
+        .pipe(gulp.dest("plugins/bootstrap3/"));
 });
 
 gulp.task("move.fontawesome", function () {
     gulp.src("node_modules/font-awesome/css/font-awesome.min.css")
-        .pipe(gulp.dest("sources/fontawesome"));
+        .pipe(gulp.dest("plugins/fontawesome"));
 });
 
 gulp.task("watch", function () {
-    gulp.watch(["sources/hlRightPanel.js", "sources/hlRightPanel.css", "./example/*"]).on("change", function (file) {
-
+    gulp.watch(["src/hlRightPanel.js", "src/hlRightPanel.css", "./example/*"]).on("change", function (file) {
+        console.log("Watch Info: file " + file + "was changed");
     });
 });
 
