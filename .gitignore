@@ -41,5 +41,5 @@ jspm_packages
 .idea/*
 
 #other plugins
-.plugins
-.plugins/*
+plugins
+plugins/*
