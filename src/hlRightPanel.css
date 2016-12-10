@@ -66,17 +66,20 @@
     background-color: #7a6e6e;
     -webkit-border-radius: 3px 0 0 3px;
     -moz-border-radius: 3px 0 0 3px;
-    border-radius: 3px 0 0 3px
+    border-radius: 3px 0 0 3px;
+    text-align: center;
 }
 
 .hl-rightPanel-tab .hl-tab-icon{
     width: 34px;
     height: 35px;
+    line-height:35px;
     margin-left: 1px;
     position: relative;
     z-index: 2;
     background-color: #7a6e6e;
     display: inline-block;
+    color: #e0e0e0;
 }
 
 .hl-rightPanel-tab .tab-text {
@@ -109,11 +112,11 @@
     left: -60px;
 }
 
-.hl-rightPanel-tab-hover .tab-icon {
+.hl-rightPanel-tab-hover .hl-tab-icon {
     background-color: #c81623;
 }
 
-.hl-rightPanel-tab-selected, .hl-rightPanel-tab-selected .tab-icon {
+.hl-rightPanel-tab-selected, .hl-rightPanel-tab-selected .hl-tab-icon {
     background-color: #c81623;
 }
 
