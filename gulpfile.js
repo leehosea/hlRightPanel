@@ -21,7 +21,8 @@ var gulp = require("gulp"),
     rename = require("gulp-rename"),
     notify = require("gulp-notify"),
     uglify = require("gulp-uglify"),
-    minimist = require("minimist");
+    minimist = require("minimist"),
+    connect = require("gulp-connect");
 
 gulp.task("move", ["move.jquery", "move.bootstrap3", "move.fontawesome"]);
 
@@ -37,12 +38,25 @@ gulp.task("move.bootstrap3", function () {
 
 gulp.task("move.fontawesome", function () {
     gulp.src("node_modules/font-awesome/css/font-awesome.min.css")
-        .pipe(gulp.dest("plugins/fontawesome"));
+        .pipe(gulp.dest("plugins/fontawesome/css/"));
+    gulp.src("node_modules/font-awesome/fonts/*")
+        .pipe(gulp.dest("plugins/fontawesome/fonts/"));
 });
 
 gulp.task("watch", function () {
-    gulp.watch(["src/hlRightPanel.js", "src/hlRightPanel.css", "./example/*"]).on("change", function (file) {
-        console.log("Watch Info: file " + file + "was changed");
+    gulp.watch(["./src/*", "./example/*"], function(){
+        gulp.src("./*")
+            .pipe(connect.reload());
+    }).on("change", function (file) {
+        console.log(file);
+    });
+});
+
+gulp.task("runserver", ['watch'],function(){
+    connect.server({
+        root: "./",
+        livereload: true,
+        port: 7100
     });
 });
 
